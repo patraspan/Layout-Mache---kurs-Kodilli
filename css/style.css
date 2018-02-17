@@ -54,7 +54,7 @@ span {
   font-weight: 900; }
 
 .hero {
-  background: url("images/hero-bg.png");
+  background: url("../images/hero-bg.png");
   height: 100vh;
   background-size: cover;
   background-attachment: fixed; }
@@ -88,6 +88,8 @@ header > nav ul {
   list-style-type: none; }
   header > nav ul > li {
     display: inline-block; }
+    header > nav ul > li:hover a {
+      color: #ed145b; }
     header > nav ul > li > a {
       display: block;
       line-height: 40px;
@@ -100,12 +102,16 @@ header > nav ul {
       font-weight: 700;
       letter-spacing: 0.4px;
       transition: .3s; }
+    header > nav ul > li.active a {
+      color: #ed145b; }
 
 header .row > ul > li > a {
   margin-bottom: 10px; }
 
-header ul > li:hover > a {
-  color: #ed145b; }
+.row:after {
+  content: " ";
+  display: table;
+  clear: both; }
 
 .jumbotron {
   margin: 0 auto;
@@ -241,7 +247,7 @@ header ul > li:hover > a {
     transform: translateY(-2%); }
 
 .carousel {
-  background: url("images/bg.png");
+  background: url("../images/bg.png");
   background-size: cover;
   height: 500px;
   display: grid;
@@ -621,7 +627,7 @@ header ul > li:hover > a {
   text-align: center;
   padding: 110px 0;
   color: #fff;
-  background: url("images/bg-2nd-jumbotron.png");
+  background: url("../images/bg-2nd-jumbotron.png");
   background-size: cover; }
   .second-jumbotron h1 {
     color: #fff;
@@ -681,6 +687,68 @@ header ul > li:hover > a {
     .download-wrapper button:hover {
       background: #fff;
       color: #ed145b; }
+
+/*========================FAQ section===================*/
+.faq h1 {
+  margin: 30px;
+  text-align: center; }
+
+.faq-item {
+  width: 100%;
+  border: 2px solid #666;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: inline-block;
+  margin: 5px 0;
+  transition: all .3s ease-in-out; }
+  .faq-item.active {
+    border: 2px solid #e20074; }
+  .faq-item.active .faq-button::after {
+    transform: rotate(90deg);
+    background: #ed145b; }
+
+.faq-button {
+  height: 40px;
+  width: 40px;
+  float: right;
+  position: relative; }
+  .faq-button::before {
+    content: '';
+    height: 2px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); }
+  .faq-button::after {
+    content: '';
+    width: 2px;
+    background: #000;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: .5s all ease; }
+
+.faq-name {
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .faq-name.active {
+    color: #ed145b; }
+
+.faq-answer {
+  display: none;
+  width: 100%; }
+
+.faq .grid {
+  display: grid;
+  margin: 50px 0;
+  grid-template-columns: 1fr 1fr; }
 
 footer {
   height: 148px;
@@ -780,13 +848,5 @@ i {
 
 .col-12 {
   width: 100%; }
-
-.row:after {
-  content: " ";
-  display: table;
-  clear: both; }
-
-li a:hover {
-  color: #ed145b; }
 
 /*# sourceMappingURL=style.css.map */
