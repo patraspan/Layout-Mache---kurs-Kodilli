@@ -677,7 +677,7 @@ header {
 #modal-next {
 	position: fixed;
 	top: 50%;
-	left: 80%;
+	left: 95%;
 	z-index: 8;
 	background: $black_0;
 	border: none;
@@ -697,7 +697,7 @@ header {
 #modal-prev {
 	position: fixed;
 	top: 50%;
-	left: 20%;
+	left: 5%;
 	z-index: 8;
 	background: $black_0;
 	border: none;
@@ -716,8 +716,8 @@ header {
 }
 #modal-close {
 	position: fixed;
-	top: 15%;
-	left: 75%;
+	top: 10%;
+	left: 95%;
 	z-index: 8;
 	background: $black_0;
 	border: none;
@@ -886,6 +886,9 @@ header {
 		transform: rotate(90deg);
 		background: $color_razzmatazz_approx;
 	  }
+	  &.active .faq-name{
+		color: $color_razzmatazz_approx;
+	}
 }
 .faq-button {
 	height: 40px;
@@ -924,9 +927,7 @@ header {
 	margin-bottom: 40px;
 	cursor: pointer;
 	transition: all .3s ease-in-out;
-	&.active {
-		color: $color_razzmatazz_approx;
-	}
+	
 }
 .faq-answer {
 	display: none;
