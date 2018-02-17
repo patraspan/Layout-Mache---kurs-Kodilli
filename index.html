@@ -5,38 +5,48 @@
     <meta charset="UTF-8">
     <title>Layout- projekt dla ambitnych</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    
+    <!--    links   -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styleLayout.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <!--    scripts   -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
 </head>
 
 <body>
     <header class="hero" id="home">
         <nav>
-           <div class="container">
-            <div class="row transparent">
-                <img class="logo" src="img/logo.png" alt="LOGO" href="#">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutUs">About us</a></li>
-                    <li class="dropdown"><a class="dropbtn" href="#services">Our Servicecs</a>
-                        <ul class="dropdown-content">
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#prices">Prices</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <div class="container">
+                <div class="row transparent">
+                    <img class="logo" src="images/logo.png" alt="LOGO" href="#">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutUs">About us</a>
+                        </li>
+                        <li>
+                            <a href="#services">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#prices">Prices</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <div class="container">
             <div class="jumbotron">
-                <h1><span>Mache</span>Free PSD Template</h1>
+                <h1>
+                    <span>Mache</span>Free PSD Template</h1>
                 <hr>
                 <p>Elegant and clean PSD template, which you can download and use for free!</p>
                 <p>You can easily modify the design to make it your own and help you get your project running faster.</p>
@@ -51,14 +61,21 @@
             <div class="grid-item-1">
                 <h1>Powerfull PSD template available for free!</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quia nemo aliquid, ex eum? Sed nam soluta suscipit nemo aspernatur perferendis at, id, sit ut adipisci deserunt, minima. Asperiores molestiae esse repellendus mollitia doloribus doloremque dignissimos, exercitationem delectus nemo repudiandae iusto placeat rem ex voluptate culpa quos ipsum iste sunt.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quia nemo aliquid, ex eum? Sed nam soluta
+                    suscipit nemo aspernatur perferendis at, id, sit ut adipisci deserunt, minima. Asperiores molestiae esse
+                    repellendus mollitia doloribus doloremque dignissimos, exercitationem delectus nemo repudiandae iusto
+                    placeat rem ex voluptate culpa quos ipsum iste sunt.</p>
                 <div class="btn-title">
                     <a href="#">
-                        <h4>Show more</h4><span><i class="fas fa-play"></i></span>  </a>
+                        <h4>Show more</h4>
+                        <span>
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
             <div class="grid-item-2">
-                <img src="img/macbook.png" alt="">
+                <img src="images/macbook.png" alt="">
             </div>
         </div>
     </section>
@@ -66,13 +83,14 @@
         <div class="container">
             <h1>Our Servies</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fuga rerum nam illum earum. Ea magni sint praesentium modi voluptas. Lorem ipsum dolor sit amet, elit. Architecto, dolorum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fuga rerum nam illum earum. Ea magni sint
+                praesentium modi voluptas. Lorem ipsum dolor sit amet, elit. Architecto, dolorum!</p>
 
             <div class="grid">
                 <div class="grid-item">
                     <div class="card">
                         <div>
-                            <img src="img/vector-icon.png" alt="">
+                            <img src="images/vector-icon.png" alt="">
                         </div>
                         <h3>Fully Editable</h3>
                     </div>
@@ -80,7 +98,7 @@
                 <div class="grid-item">
                     <div class="card">
                         <div>
-                            <img src="img/bracket-icon.png" alt="">
+                            <img src="images/bracket-icon.png" alt="">
                         </div>
                         <h3>Free download</h3>
                     </div>
@@ -88,7 +106,7 @@
                 <div class="grid-item">
                     <div class="card">
                         <div>
-                            <img src="img/paint-icon.png" alt="">
+                            <img src="images/paint-icon.png" alt="">
                         </div>
                         <h3>Modern Design</h3>
                     </div>
@@ -96,7 +114,7 @@
                 <div class="grid-item">
                     <div class="card">
                         <div>
-                            <img src="img/mobile-icon.png" alt="">
+                            <img src="images/mobile-icon.png" alt="">
                         </div>
                         <h3>100% Responsive</h3>
                     </div>
@@ -108,12 +126,14 @@
 
     <section class="carousel">
         <div class="container">
-            <img class="arrow-left" src="img/arrow-left.png" alt="left">
-            <img class="arrow-right" src="img/arrow-right.png" alt="right">
+            <img class="arrow-left" src="images/arrow-left.png" alt="left">
+            <img class="arrow-right" src="images/arrow-right.png" alt="right">
             <div class="quote">
-                <img src="img/quote1.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat rerum maxime eveniet quia iure odit error unde esse sapiente reprehenderit ratione doloremque, corporis atque a fuga aliquid deleniti! </p>
-                <img src="img/quote2.png" alt="">
+                <img src="images/quote1.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quaerat rerum maxime eveniet quia iure
+                    odit error unde esse sapiente reprehenderit ratione doloremque, corporis atque a fuga aliquid deleniti!
+                </p>
+                <img src="images/quote2.png" alt="">
             </div>
         </div>
     </section>
@@ -121,11 +141,13 @@
         <div class="container">
             <h1>Check Our Prices</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id omnis dolores quod tenetur voluptates quae impedit aut! Minus, vero, provident!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id omnis dolores quod tenetur voluptates quae impedit
+                aut! Minus, vero, provident!</p>
             <div class="grid">
                 <div class="price-tab">
                     <div class="price">
-                        <h2><span>$</span>19</h2>
+                        <h2>
+                            <span>$</span>19</h2>
                         <p>per month</p>
                     </div>
                     <div class="option">
@@ -141,7 +163,8 @@
                 </div>
                 <div class="price-tab">
                     <div class="price">
-                        <h2><span>$</span>39</h2>
+                        <h2>
+                            <span>$</span>39</h2>
                         <p>per month</p>
                     </div>
                     <div class="option">
@@ -157,7 +180,8 @@
                 </div>
                 <div class="price-tab">
                     <div class="price">
-                        <h2><span>$</span>59</h2>
+                        <h2>
+                            <span>$</span>59</h2>
                         <p>per month</p>
                     </div>
                     <div class="option">
@@ -173,7 +197,8 @@
                 </div>
                 <div class="price-tab">
                     <div class="price">
-                        <h2><span>$</span>99</h2>
+                        <h2>
+                            <span>$</span>99</h2>
                         <p>per month</p>
                     </div>
                     <div class="option">
@@ -195,56 +220,62 @@
             <div class="grid">
                 <div class="row feature-tab">
                     <div class="col-2">
-                        <img src="img/presentation-icon.png" alt="">
+                        <img src="images/presentation-icon.png" alt="">
                     </div>
                     <div class="col-10">
                         <h3>High Resolution</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis harum fugit totam sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis
+                            harum fugit totam sint.</p>
                     </div>
                 </div>
                 <div class="row feature-tab">
                     <div class="col-2">
-                        <img src="img/photo-icon.png" alt="">
+                        <img src="images/photo-icon.png" alt="">
                     </div>
                     <div class="col-10">
                         <h3>Photography</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis harum fugit totam sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis
+                            harum fugit totam sint.</p>
                     </div>
                 </div>
                 <div class="row feature-tab">
                     <div class="col-2">
-                        <img src="img/code-icon.png" alt="">
+                        <img src="images/code-icon.png" alt="">
                     </div>
                     <div class="col-10">
                         <h3>Easy to customize</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis harum fugit totam sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis
+                            harum fugit totam sint.</p>
                     </div>
                 </div>
                 <div class="row feature-tab">
                     <div class="col-2">
-                        <img src="img/gear-icon.png" alt="">
+                        <img src="images/gear-icon.png" alt="">
                     </div>
                     <div class="col-10">
                         <h3>24/7 Support</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis harum fugit totam sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis
+                            harum fugit totam sint.</p>
                     </div>
                 </div>
                 <div class="row feature-tab">
                     <div class="col-2">
-                        <img src="img/wand-icon.png" alt="">
+                        <img src="images/wand-icon.png" alt="">
                     </div>
                     <div class="col-10">
                         <h3>Powerfull theme</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis harum fugit totam sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis
+                            harum fugit totam sint.</p>
                     </div>
                 </div>
                 <div class="row feature-tab">
                     <div class="col-2">
-                        <img src="img/seo-icon.png" alt="">
+                        <img src="images/seo-icon.png" alt="">
                     </div>
                     <div class="col-10">
                         <h3>SEO Optimization</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis harum fugit totam sint.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia molestias, ad unde, perferendis reiciendis
+                            harum fugit totam sint.</p>
                     </div>
                 </div>
             </div>
@@ -253,7 +284,8 @@
     <section class="banner">
         <div class="container">
             <div>
-                <h1>Became a part of <span>Mache</span> community today</h1>
+                <h1>Became a part of
+                    <span>Mache</span> community today</h1>
                 <button>Join Us</button>
             </div>
         </div>
@@ -262,83 +294,108 @@
         <div class="container">
             <h1>Our Latest Updates</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis alias pariatur, at saepe architecto, temporibus repudiandae distinctio quam eum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis alias pariatur, at saepe architecto, temporibus
+                repudiandae distinctio quam eum.</p>
             <div class="grid">
                 <div class="updates-tab hidden-on-start">
                     <div class="tab-image">
                         <div class="layer">
-                            <a href=""><i class="fas fa-search"></i></a>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
                         </div>
-                        <img src="img/img1.png" alt="">
+                        <img src="images/img1.png" alt="">
                     </div>
                     <div class="tab-text">
                         <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                            necessitatibus.
+                        </p>
                     </div>
                 </div>
                 <div class="updates-tab hidden-on-start">
                     <div class="tab-image">
                         <div class="layer">
-                            <a href=""><i class="fas fa-search "></i></a>
+                            <a href="">
+                                <i class="fas fa-search "></i>
+                            </a>
 
                         </div>
-                        <img src="img/img2.png" alt="">
+                        <img src="images/img2.png" alt="">
                     </div>
                     <div class="tab-text">
                         <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                            necessitatibus.
+                        </p>
                     </div>
                 </div>
                 <div class="updates-tab hidden-on-start">
                     <div class="tab-image">
                         <div class="layer">
-                            <a href=""><i class="fas fa-search "></i></a>
+                            <a href="">
+                                <i class="fas fa-search "></i>
+                            </a>
 
                         </div>
-                        <img src="img/img3.png" alt="">
+                        <img src="images/img3.png" alt="">
                     </div>
                     <div class="tab-text">
                         <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                            necessitatibus.
+                        </p>
                     </div>
                 </div>
                 <div class="updates-tab hidden-on-start">
                     <div class="tab-image">
                         <div class="layer">
-                            <a href=""><i class="fas fa-search"></i></a>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
 
                         </div>
-                        <img src="img/img4.png" alt="">
+                        <img src="images/img4.png" alt="">
                     </div>
                     <div class="tab-text">
                         <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                            necessitatibus.
+                        </p>
                     </div>
                 </div>
                 <div class="updates-tab hidden-on-start">
                     <div class="tab-image">
                         <div class="layer">
-                            <a href=""><i class="fas fa-search"></i></a>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
 
                         </div>
-                        <img src="img/img5.png" alt="">
+                        <img src="images/img5.png" alt="">
                     </div>
                     <div class="tab-text">
                         <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                            necessitatibus.
+                        </p>
                     </div>
                 </div>
                 <div class="updates-tab hidden-on-start">
                     <div class="tab-image">
                         <div class="layer">
-                            <a href=""><i class="fas fa-search"></i></a>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
 
                         </div>
-                        <img src="img/img6.png" alt="">
+                        <img src="images/img6.png" alt="">
                     </div>
                     <div class="tab-text">
                         <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                            necessitatibus.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -348,91 +405,124 @@
                     <div class="updates-tab hidden-on-start">
                         <div class="tab-image">
                             <div class="layer">
-                                <a href=""><i class="fas fa-search"></i></a>
+                                <a href="">
+                                    <i class="fas fa-search"></i>
+                                </a>
                             </div>
                             <img src="https://images.pexels.com/photos/164732/pexels-photo-164732.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
                         </div>
                         <div class="tab-text">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                                necessitatibus.
+                            </p>
                         </div>
                     </div>
                     <div class="updates-tab hidden-on-start">
                         <div class="tab-image">
                             <div class="layer">
-                                <a href=""><i class="fas fa-search "></i></a>
+                                <a href="">
+                                    <i class="fas fa-search "></i>
+                                </a>
 
                             </div>
                             <img src="https://images.pexels.com/photos/157169/pexels-photo-157169.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
                         </div>
                         <div class="tab-text">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                                necessitatibus.
+                            </p>
                         </div>
                     </div>
                     <div class="updates-tab hidden-on-start">
                         <div class="tab-image">
                             <div class="layer">
-                                <a href=""><i class="fas fa-search "></i></a>
+                                <a href="">
+                                    <i class="fas fa-search "></i>
+                                </a>
 
                             </div>
                             <img src="https://images.pexels.com/photos/169978/pexels-photo-169978.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
                         </div>
                         <div class="tab-text">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                                necessitatibus.
+                            </p>
                         </div>
                     </div>
                     <div class="updates-tab hidden-on-start">
                         <div class="tab-image">
                             <div class="layer">
-                                <a href=""><i class="fas fa-search"></i></a>
+                                <a href="">
+                                    <i class="fas fa-search"></i>
+                                </a>
 
                             </div>
                             <img src="https://images.pexels.com/photos/575402/pexels-photo-575402.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
                         </div>
                         <div class="tab-text">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                                necessitatibus.
+                            </p>
                         </div>
                     </div>
                     <div class="updates-tab hidden-on-start">
                         <div class="tab-image">
                             <div class="layer">
-                                <a href=""><i class="fas fa-search"></i></a>
+                                <a href="">
+                                    <i class="fas fa-search"></i>
+                                </a>
 
                             </div>
                             <img src="https://images.pexels.com/photos/695794/pexels-photo-695794.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
                         </div>
                         <div class="tab-text">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                                necessitatibus.
+                            </p>
                         </div>
                     </div>
                     <div class="updates-tab hidden-on-start">
                         <div class="tab-image">
                             <div class="layer">
-                                <a href=""><i class="fas fa-search"></i></a>
+                                <a href="">
+                                    <i class="fas fa-search"></i>
+                                </a>
 
                             </div>
                             <img src="https://images.pexels.com/photos/112854/pexels-photo-112854.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
                         </div>
                         <div class="tab-text">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium necessitatibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et adipisci beatae, nam esse, accusantium
+                                necessitatibus.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="see"><a href="" id="seeMoreBtn">see more</a><i class="fas fa-angle-down"></i></div>
+            <div class="see">
+                <a href="" id="seeMoreBtn">see more</a>
+                <i class="fas fa-angle-down"></i>
+            </div>
 
         </div>
-<!-- MODAL - button to see next or previous image and to close image view -->
+        <!-- MODAL - button to see next or previous image and to close image view -->
         <div id="modal" class="modal" style="display: none;">
             <img id="modal-image" src="" alt>
-            <button data-toNumber="0" id="modal-next"><i class="fas fa-chevron-right"></i></button>
-            <button data-toNumber="0" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
-            <button data-toNumber="0" id="modal-close"><i class="fas fa-times"></i></button>
+            <button data-toNumber="0" id="modal-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button data-toNumber="0" id="modal-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button data-toNumber="0" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
 
     </section>
@@ -440,7 +530,10 @@
         <div class="container">
             <h1>Mache Free PSD Template</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatem illum mollitia maiores autem. A aliquam iusto modi possimus cumque ipsum ipsa sequi. Praesentium dignissimos quisquam repudiandae accusamus, voluptates quis voluptatum? Neque, sed ratione officiis recusandae modi? Dolorum deserunt quis eligendi repellat? Eos, illum provident rerum. Earum pariatur, nam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptatem illum mollitia maiores autem. A aliquam
+                iusto modi possimus cumque ipsum ipsa sequi. Praesentium dignissimos quisquam repudiandae accusamus, voluptates
+                quis voluptatum? Neque, sed ratione officiis recusandae modi? Dolorum deserunt quis eligendi repellat? Eos,
+                illum provident rerum. Earum pariatur, nam at.</p>
             <button>SHOW MORE</button>
         </div>
     </section>
@@ -448,12 +541,15 @@
         <div class="container">
             <div class="grid">
                 <div class="window-img">
-                    <img src="img/window-content.png" alt="">
+                    <img src="images/window-content.png" alt="">
                 </div>
                 <div>
                     <h1>Please share some love by appreciate it and download!</h1>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio at debitis commodi minima, corporis voluptatem expedita, fuga veritatis ea rem, quia totam nihil excepturi praesentium unde optio reprehenderit. Beatae doloremque reiciendis quos, dolores dignissimos non, quia neque praesentium id eos incidunt sequi ipsa odio temporibus, tempore possimus perspiciatis, aliquid pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio at debitis commodi minima, corporis
+                        voluptatem expedita, fuga veritatis ea rem, quia totam nihil excepturi praesentium unde optio reprehenderit.
+                        Beatae doloremque reiciendis quos, dolores dignissimos non, quia neque praesentium id eos incidunt
+                        sequi ipsa odio temporibus, tempore possimus perspiciatis, aliquid pariatur.</p>
                     <button>Download Now</button>
                 </div>
             </div>
@@ -464,25 +560,39 @@
             <div class="grid">
                 <div class="copyright">© 2018 COPYRIGHT MACHE TEMPLATE</div>
                 <div class="social">
-                    <a href="https://www.facebook.com/patryk.kurzeja.8" target="_blank"><button class="icon-btn twitter"><i class="fab fa-twitter"></i></button></a>
-                    <a href="https://www.facebook.com/patryk.kurzeja.8" target="_blank"><button class="icon-btn facebook"><i class="fab fa-facebook-f"></i></button></a>
-                    <a href="https://plus.google.com/101814462461676383853?hl=pl" target="_blank"><button class="icon-btn google-plus"><i class="fab fa-google-plus-g"></i></button></a>
-                    <a href="https://www.instagram.com/patrykkurzeja/"><button class="icon-btn instagram" target="_blank"><i class="fab fa-instagram"></i></button></a>
-                    <a href="https://github.com/patraspan" target="_blank"><button class="icon-btn github"><i class="fab fa-github"></i></button></a>
+                    <a href="https://www.facebook.com/patryk.kurzeja.8" target="_blank">
+                        <button class="icon-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/patryk.kurzeja.8" target="_blank">
+                        <button class="icon-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                    </a>
+                    <a href="https://plus.google.com/101814462461676383853?hl=pl" target="_blank">
+                        <button class="icon-btn google-plus">
+                            <i class="fab fa-google-plus-g"></i>
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/patrykkurzeja/">
+                        <button class="icon-btn instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                    </a>
+                    <a href="https://github.com/patraspan" target="_blank">
+                        <button class="icon-btn github">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-    
-    
-<!--    scripts   -->
-    <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="scriptLayout.js"></script>
+
+
+
 </body>
 
 </html>

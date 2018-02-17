@@ -1,91 +1,18 @@
-/*
-var xxx = 3; //zmienna globalna, dostęp wszędzie
-
-function name() {
-	alert(123);
-
-	var bbb = 4; //zmienna lokalna, dostęp wewnątrz tej funkcji i jej dzieci
-
-	function abc() {
-		console.log(bbb); // 4
-	}
-}
-
-name();
-
-console.log(bbb); //undefined
-
-///////
-
-var ccc; //= null;
-
-function name2() {
-	ccc = 4; //zmienna lokalna, dostęp wewnątrz tej funkcji i jej dzieci
-}
-
-name2();
-
-console.log(ccc); //4
-
-///////
-
-var zmienna = function (a, b, c) { //alternatywna deklaracja funkcji
-	alert(a + b + c);
-
-	return 0;
-};
-
-(function () {
-	//funkcja anonimowa
-
-	var xyz = 3;
-	//bezpieczny zasięg zmiennej 
-})();
-
-////////
-
-//referencja vs zmienna
-
-var nazwaZmiennej = 3;
-
-var nazwaObiektu = {
-	x: 1,
-	y: 2
-}
-
-var zmienna2 = nazwaZmiennej;
-zmienna2++;
-
-console.log(nazwaZmiennej); // 3
-console.log(zmienna2); // 4
-
-var obiekt2 = nazwaObiektu;
-obiekt2.x++;
-
-console.log(nazwaObiektu.x); // 2
-console.log(obiekt2.x); // 2
-
-
-
-
-
-// console.log(nazwaObiektu.x);
-// console.log(nazwaObiektu['y']);
-
-*/
-
-
-//scrolling effect
-//1. scroll on click on navbar
-//2.navbar change color on 
 $(document).ready(function () {
-	$('.hero a').click(function (e) {
+	var scrollLink = $('.hero a');
+	scrollLink.click(function (e) {
 		e.preventDefault();
 
 		// var href = $(this).attr('href'); //attr to seter i geter
 		// var sectionPosition = $(href).offset().top-60;
 
 		$("html, body").stop().animate({ scrollTop: $(this.hash).offset().top-60 }, 1000);
+		$(window).scroll(function(){
+			var scrollbarLocation = $(this).scrollTop();
+		});
+		scrollLink.each(function(){
+			var sectionOffset = $(this.hash).offset().top;
+		})
 	});
     
     $(window).scroll(function(){
