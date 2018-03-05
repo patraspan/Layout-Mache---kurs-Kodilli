@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -65,6 +66,8 @@ nav {
   background: transparent;
   position: fixed;
   top: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s; }
   nav.fixed {
     position: fixed;
@@ -73,6 +76,8 @@ nav {
     z-index: 5; }
     nav.fixed .logo {
       padding: 20px 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
       transition: .3s; }
     nav.fixed .row > ul > li > a {
       padding: 10px 10px 0;
@@ -81,6 +86,8 @@ nav {
 .logo {
   cursor: pointer;
   padding: 40px 50px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s; }
 
 header > nav ul {
@@ -101,6 +108,8 @@ header > nav ul {
       font-size: 16px;
       font-weight: 700;
       letter-spacing: 0.4px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
       transition: .3s; }
     header > nav ul > li.active a {
       color: #ed145b; }
@@ -121,6 +130,8 @@ header .row > ul > li > a {
   left: 0;
   right: 0;
   top: 50vh;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
   .jumbotron h1 {
     color: #fff;
@@ -140,6 +151,8 @@ header .row > ul > li > a {
     border: none;
     border-radius: 25px;
     margin-top: 66px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s; }
     .jumbotron button:hover {
       background: #fff;
@@ -157,10 +170,14 @@ header .row > ul > li > a {
     font-weight: 400;
     display: inline-block;
     margin: 45px 2px 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s; }
     .promotion .btn-title a {
       color: #ed145b; }
     .promotion .btn-title:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
       transform: scale(1.05); }
     .promotion .btn-title h4 {
       display: inline-block;
@@ -235,15 +252,22 @@ header .row > ul > li > a {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
 .card {
   padding: 50px 20px;
   border-radius: 0 0 75px 75px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   cursor: pointer; }
   .card:hover {
+    -webkit-box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-2%);
+    -ms-transform: translateY(-2%);
     transform: translateY(-2%); }
 
 .carousel {
@@ -252,6 +276,8 @@ header .row > ul > li > a {
   height: 500px;
   display: grid;
   grid-template-columns: 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .carousel .container {
     position: relative; }
@@ -273,12 +299,16 @@ header .row > ul > li > a {
   position: absolute;
   top: 50%;
   left: -20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .arrow-right {
   position: absolute;
   top: 50%;
   right: -20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .prices-wrapper {
@@ -300,8 +330,12 @@ header .row > ul > li > a {
   background: #ddd;
   position: relative;
   background: #fff;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s; }
   .price-tab:hover {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
     transform: scale(1.01); }
     .price-tab:hover .price {
       background: #ed145b; }
@@ -314,6 +348,8 @@ header .row > ul > li > a {
     border: none;
     border-radius: 25px;
     margin-bottom: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     color: #f4f4f4;
     font-size: 15px;
@@ -331,6 +367,8 @@ header .row > ul > li > a {
   color: #f4f4f4;
   padding: 33px 0 54px 0;
   position: relative;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s; }
   .price span {
     font-size: 20px;
@@ -354,10 +392,14 @@ header .row > ul > li > a {
   border: none;
   border-radius: 25px;
   margin-top: 66px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   margin: 0 auto;
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   .option h3 {
     color: #5a5a5a;
@@ -405,6 +447,8 @@ header .row > ul > li > a {
     height: 50px;
     border: none;
     border-radius: 25px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     font-size: 15px;
     font-weight: 700;
@@ -414,6 +458,8 @@ header .row > ul > li > a {
     margin-left: 30px;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .banner button:hover {
       background: #ed145b;
@@ -468,6 +514,8 @@ header .row > ul > li > a {
     left: 0;
     background: rgba(237, 20, 91, 0.75);
     opacity: 0;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
     transition: all ease .5s; }
   .updates .grid2 {
     display: grid;
@@ -482,10 +530,16 @@ header .row > ul > li > a {
 
 .hidden-on-start {
   opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
   transform: translateY(50%);
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
   transition: all ease .5s; }
   .hidden-on-start.visible {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0); }
 
 .tab-text {
@@ -497,6 +551,7 @@ header .row > ul > li > a {
     width: 100%;
     height: 240px;
     background-size: cover;
+    -o-object-fit: cover;
     object-fit: cover;
     display: block; }
   .tab-image:hover::before {
@@ -545,10 +600,16 @@ header .row > ul > li > a {
   font-size: 3em;
   cursor: pointer;
   outline: none;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
   #modal-next:hover {
     color: #ddd;
+    -webkit-transform: scale(1.1) translateX(-50%);
+    -ms-transform: scale(1.1) translateX(-50%);
     transform: scale(1.1) translateX(-50%); }
 
 #modal-prev {
@@ -561,10 +622,16 @@ header .row > ul > li > a {
   font-size: 3em;
   cursor: pointer;
   outline: none;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
   #modal-prev:hover {
     color: #ddd;
+    -webkit-transform: scale(1.1) translateX(-50%);
+    -ms-transform: scale(1.1) translateX(-50%);
     transform: scale(1.1) translateX(-50%); }
 
 #modal-close {
@@ -577,21 +644,32 @@ header .row > ul > li > a {
   font-size: 3em;
   cursor: pointer;
   outline: none;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
   #modal-close:hover {
     color: #ddd;
+    -webkit-transform: scale(1.1) translateX(-50%);
+    -ms-transform: scale(1.1) translateX(-50%);
     transform: scale(1.1) translateX(-50%); }
 
 .layer {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 10px;
   opacity: 0;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
   transition: all ease .5s;
   color: #000;
   height: 20px; }
@@ -615,6 +693,8 @@ header .row > ul > li > a {
   grid-gap: 30px; }
 
 .rotation {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-angle-down {
@@ -650,6 +730,8 @@ header .row > ul > li > a {
     border: none;
     border-radius: 25px;
     margin-top: 66px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s; }
     .second-jumbotron button:hover {
       background: #fff;
@@ -666,6 +748,8 @@ header .row > ul > li > a {
       position: absolute;
       right: 30px;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       height: 562px; }
   .download-wrapper h1 {
@@ -683,6 +767,8 @@ header .row > ul > li > a {
     border: none;
     border-radius: 25px;
     margin-top: 66px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s; }
     .download-wrapper button:hover {
       background: #fff;
@@ -700,10 +786,14 @@ header .row > ul > li > a {
   padding: 30px 20px;
   display: inline-block;
   margin: 5px 0;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
   .faq-item.active {
     border: 2px solid #e20074; }
   .faq-item.active .faq-button::after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     background: #ed145b; }
   .faq-item.active .faq-name {
@@ -723,6 +813,8 @@ header .row > ul > li > a {
     top: 50%;
     left: 0;
     right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
   .faq-button::after {
     content: '';
@@ -733,12 +825,18 @@ header .row > ul > li > a {
     left: 50%;
     top: 0;
     bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
     transition: .5s all ease; }
 
 .faq-name {
   margin-bottom: 40px;
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
 .faq-answer {
@@ -759,10 +857,12 @@ footer {
     height: 148px; }
   footer .social {
     justify-self: center;
+    -ms-flex-item-align: center;
     align-self: center; }
 
 .copyright {
   justify-self: left;
+  -ms-flex-item-align: center;
   align-self: center; }
 
 .icon-btn {
@@ -773,11 +873,15 @@ footer {
   border-radius: 50%;
   margin: 10px;
   font-size: 34px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
   background: #ecf0f1;
   outline: none;
   cursor: pointer; }
   .icon-btn:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2); }
 
 i {
@@ -848,5 +952,3 @@ i {
 
 .col-12 {
   width: 100%; }
-
-/*# sourceMappingURL=style.css.map */
