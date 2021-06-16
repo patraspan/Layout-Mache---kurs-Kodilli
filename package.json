@@ -33,6 +33,6 @@
     "onchange": "^3.3.0"
   },
   "dependencies": {
-    "autoprefixer": "^8.0.0"
+    "autoprefixer": "^8.6.5"
   }
 }
